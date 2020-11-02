@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function check(n){
+        let i=2;
+        if (n<2){
+            return ;
+        }while (i<n){
+            if (n%i===0){
+                return ;
+            }i++;
+        }console.log(n);
+    }
+    let checkAll = function(n){
+
+        for(let i=0;i<n; i++){
+            check(i)
+        };
+    }
+    checkAll(10);
+</script>
+</body>
+</html>

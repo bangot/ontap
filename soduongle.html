@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div>
+    <input id="result" type="number">
+    <input type="button" value="Kiểm tra số lẻ dương" onclick=check()>
+    <p id="ketqua"></p>
+    <input id="result1" type="number">
+    <input type="button" value="Kiểm tra số nguyen to" onclick=check()>
+    <p id="ketqua1"></p>
+</div>
+<script>
+function check(){
+    let  number= +document.getElementById('result').value
+    if (number % 2!==0){
+        document.getElementById("ketqua").innerHTML=number +'la so duong le';
+    }else {
+        document.getElementById("ketqua").innerHTML=number +'nhap lai so duong le';
+}
+}
+function check(){
+    let number=+document.getElementById("result1").value;
+    let i=2;
+    if (number<2){
+        document.getElementById("ketqua1").innerHTML="k phai so nt";
+        return ;
+    }while (i<number){
+        if (number%i===0){
+            document.getElementById("ketqua1").innerHTML="k phai so nt";
+            return ;
+        }i++;
+    }document.getElementById("ketqua1").innerHTML="la so nt";
+}
+
+
+
+
+
+    </script>
+</body>
+</html>
