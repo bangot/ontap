@@ -11,7 +11,11 @@
     for (let i=0;i<number;i++){
         arr[i] = prompt('nhap phan tu thu ' + i)
     } console.log(arr)
-
+    for( let i = 0; i < array.length-1; i++){
+        if ( array[i] === i) {
+            arr.splice(i, 1);
+        }
+    }
 </script>
 </body>
 </html>
